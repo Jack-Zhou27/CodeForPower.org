@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("file://D:/ApplePhone/JackApplePhone/Photo/20200418/Bird.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  height: 700px; /* Used to enable scrolling */
+  background: linear-gradient(55deg, #0fb8ad 0%, #99CCFF 51%, #D3D3D3 85%);
+}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body {
+  font-size: 100%;
+}
+</style>
+<h1> PRELIMINARY </h1>
+<h2> Getting Started </h2>
+<hr>
+</head>
+<body>
+
+<p>
+<strong><bold>LESSON 1: PRIMITIVE DATA TYPES:</bold></strong> 
+
+<br>What is data?
+<br>
+<div style="font-size:2vw;">
+<br>Data is information, such as numbers, 
+<br>conditional statements (yes, no), 
+<br>and more. For computers to process 
+<br>such information, data types and data 
+<br>structures exist to store them. 
+(<br>NOTE* computers don’t understand data. 
+<br>They just have access to the ones you store.)
+</div>
+
+<br>
+<br>Primitive data types:
+<br>There are 8 primitive data types that 
+<br>are predetermined and built into Java. 
+<br>All primitive data types have a 
+<br>predetermined memory size allocated 
+<br>for their storage. 
+
+
+<br>The Primitive Data Types (8)
+<br>Listed below are the 8 primitive data types in Java.
+<br>NOTE: floating-point types should never be used
+<br>to store exact values due to accuracy errors.
+
+
+<br>
+<br>int (Integral primitive type)
+<br>Ints will be the most frequently used         
+<br>primitive data type that one will use
+<br>to store an integer (such as 2,100,467).
+<br>Ints are among the most frequently used 
+<br>primitive types, and therefore, should 
+<br>be one that is thoroughly understood in
+<br>its applications. You cannot store ints 
+<br>over their upper and lower boundaries. 
+
+
+<pre>
+NOTE: the int can overflow should 
+you perform arithmetic with integers 
+that store the largest or smallest 
+numbers that it can store. For example, 
+if you print “value”, an int that stores 
+2,147,483,647, and add one to it,
+it will overflow and print the smallest
+possible integer that the int can store 
+(will print -2,147,483,648 instead).
+The following formulas can be used
+to see what is going to be the output
+should you overflow a int intentionally 
+or purposefully. Integer values, as of
+Java SE 7, can have underscores 
+between its digits for readability.
+(example: 99_012)
+
+(int value = 2,147,483,647): System.out.print(value + n) →  -2,147,483,648 + n - 1
+(int value = -2,147,483,648): System.out.print(value - n) →  2,147,483,648 - n + 1
+
+</pre>
+
+
+
+
+<pre>
+<p style="font-size:100px">
+double (floating-point type)
+Doubles are another frequent data 
+type that Java programmers use to 
+store decimals (3.1415926). Doubles 
+are also another frequently used
+primitive data type, and therefore,
+should be understood in its 
+applications as well. Typically, 
+any decimal will be expressed as 
+a double instead of a float as memory
+size isn’t a problem that concerns 
+modern day computers. Doubles are
+also more powerful than ints as they
+can store ints. In doing so, the integer 
+stored will be promoted into a double
+through the appending of zeros after
+the units digit. (32.000) This can, 
+however, result in accuracy errors 
+(32.001) and should be used cautiously. 
+Doubles, therefore, should never be 
+used to store precise values. Values 
+exceeding its range cannot be stored 
+as a double.
+</p>
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Syntax for primitive data declarations
+
+(primitive type) dataName = (data that the type can store); 
+NOTE: (primitive type = int, double, boolean, byte, short, long, float)
+
+char dataName = ‘data that char can store’;
+
+</p>
+
+<div class="parallax"></div>
+
+<div style="height:300px;background-color:;font-size:36px">
+<br>
+<br>
+<br>
+	<form action="JavaBasics.html">
+    <button type="submit" class = "button">Exit Lesson Slides</button>
+</div>
+<h2 style="position:fixed;">Scroll to see the effect.</h2>
+</body>
+</html>

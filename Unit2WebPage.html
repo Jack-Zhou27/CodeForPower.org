@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("Images/Duck.png");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  height: 2000px; /* Used to enable scrolling */
+ background-color: #ffb3b3; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#e6f2ff 10%, #ffe6cc 85%, #ffe6e6 90%);
+}
+
+
+
+.gradient-button {
+    margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+}
+.gradient-button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+.gradient-button-2 {background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%)}
+.gradient-button-2:hover { background-position: right center; }
+
+.gradient-button-3 {background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)}
+.gradient-button-3:hover { background-position: right center; }
+
+.gradient-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
+.gradient-button-4:hover { background-position: right center; }
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.bgImage {
+	  /* The image used */
+	  background-image: url("Images/Space1.png");
+
+	  /* Full height */
+	  height: 650px; 
+	  width:1250px;
+	  margin: 0;
+	  border-radius: 5%;
+
+	  /* Center and scale the image nicely */
+	  /* background-position: float; */
+	  background-repeat: repeat;
+	  background-size: cover;
+
+	}
+	
+	.bgImage1 {
+	  /* The image used */
+	  background-image: url("Images/Space.png");
+
+	  /* Full height */
+	  height: 500px; 
+	  width:1000px;
+	  margin: 0;
+	  border-radius: 5%;
+
+	  /* Center and scale the image nicely */
+	  /* background-position: float; */
+	  background-repeat: repeat;
+	  background-size: cover;
+
+	}
+	
+	
+</style>
+
+</head>
+<body>
+<p>
+<div style="font-size:4vw;">
+
+<center><strong>Unit 2: Classes</strong> </center>
+</div>
+</p>
+
+<br>
+
+<div>
+	  <form action="LessonLectures\Unit2.1.html">
+		<center><button type="submit" class = "button">Classes</button></center>
+	  </form>
+              <br>
+			  <br>
+			  <form action="PracticeQuiz\Unit2.1Quiz.html"> 
+				<center><button type="submit" class="gradient-button gradient-button-1">Classes Practice</button></center>
+				</form>
+</div>
+<br>
+<br>
+<div>
+	
+	</div>
+        
+        <br>
+        
+        <div>
+          <form action="LessonLectures\Unit2.2.html">
+           <center> <button type="submit" class = "button">Objects</button></center>
+          </form>
+		  <br>
+		  <br>
+		   <form action="PracticeQuiz\Unit2.2Quiz.html">
+		   <center><button type="submit" class="gradient-button gradient-button-1">Objects Practice</button></center>
+		</form>
+        </div>
+		
+		
+        <br>
+        <br>
+		  <center> <div class = "bgImage">
+		  <br>
+		  <br>
+		  <br>
+          <form action="LessonLectures\Unit2.3.html">
+           <center> <button type="submit" class = "button">Methods</button></center>
+          </form>
+		   <br>
+		  <br>
+		  <form action="LessonLectures\Unit2.3.1.html">
+           <center> <button type="submit" class = "button">Modifers</button></center>
+          </form>
+		  <br>
+		  <br>
+		  <form action="LessonLectures\Unit2.3.2.html">
+           <center> <button type="submit" class = "button">Constructors</button></center>
+          </form>
+		  <br>
+		  <br>
+		  <form action="PracticeQuiz\Unit2.3Quiz.html">
+		   <center><button type="submit" class="gradient-button gradient-button-1">Methods Practice</button></center>
+		</form>
+		<br>
+		  <br>
+		  <form action="PracticeQuiz\Unit2.3.1Quiz.html">
+		   <center><button type="submit" class="gradient-button gradient-button-1">Methods Practice 2</button></center>
+		</form>
+		 <br>
+		  <br>
+		</div>
+		<div>
+		 <br>
+		  <br>
+		  <form action="LessonLectures\Unit2.4.html">
+           <center> <button type="submit" class = "button">Using Objects</button></center>
+          </form>
+		  
+		   <br>
+		  <br>
+		  <form action="PracticeQuiz\Unit2.4Quiz.html">
+		   <center><button type="submit" class="gradient-button gradient-button-1">Using Objects Practice</button></center>
+		</form>
+		<br>
+		<br>
+		 <center> <div class = "bgImage1">
+				
+				 <br>
+			  <br>
+			  <form action="LessonLectures\Unit2.5.html">
+			   <center> <button type="submit" class = "button">Encapsulation</button></center>
+			  </form>
+				<br>
+				<br>
+				  <form action="LessonLectures\Unit2.5.1.html">
+				   <center> <button type="submit" class = "button">Inheritance</button></center>
+				  </form>
+				   <br>
+				  <br>
+				  <form action="LessonLectures\Unit2.5.2.html">
+				   <center> <button type="submit" class = "button">Polymorphism</button></center>
+				  </form>
+					<br>
+				  <br>
+				  <form action="PracticeQuiz\Unit2.5Quiz.html">
+				   <center><button type="submit" class="gradient-button gradient-button-1">The "Big Three" Practice</button></center>
+				</form>
+			
+		</div></center>
+		  <br>
+		  <br>
+		  <form action="LessonLectures\Unit2.6.html">
+           <center> <button type="submit" class = "button">Java Packages</button></center>
+          </form>
+		   <br>
+		  <br>
+		  <form action="LessonLectures\Unit2.7.html">
+           <center> <button type="submit" class = "button">Unit 2 Review</button></center>
+          </form>
+		  <br>
+		  <br>
+		  <form action="PracticeQuiz\Unit2Practice.html">
+		   <center><button type="submit" class="gradient-button gradient-button-1">Unit 2 Practice</button></center>
+		</form>
+		<br>
+		<br>
+        </div>
+		
+        <div>
+		  <br>
+		  <br>
+		  <form action="PracticeQuiz\Unit2Final.html">
+		<center><button class="button" style="background-color: LightSlateGray; vertical-align:middle">
+		<span>Unit 2 Final</span></button></center>
+		</form>
+	 </div>
+	 <br>
+	 <br>
+	 
+
+<br>
+<div>
+<br>
+<br>
+<br>
+	<form action="JavaBasics.html">
+		<button type="submit" class = "button" style = "float: left; position:relative; right:-30px; top:-55px;">Exit Lesson</button>
+	</form>
+	
+	
+	<form action="Unit3WebPage.html">
+		<button type="submit" class = "button" style = "float: right; position:relative; left:-30px; top:-55px;">Unit 3</button>
+	</form>
+	<br>
+</div>
+<br>
+<br>
+
+
+
+<div class="parallax"></div>
+<h2 style="position:fixed;">Scroll to see the effect.</h2>
+
+
+
+
+
+</body>
+</html>

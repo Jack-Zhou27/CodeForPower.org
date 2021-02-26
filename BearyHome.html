@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f2f2f2;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+	
+	.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <a class="active" href="BearyHome.html">BearyPro</a>
+  <a href="JavaBasics.html">AP Computer Science A</a>
+  <a href="CompetitiveProgramming.html">Competitive Programming</a>
+  <a href="Donate.html">Donate &#10084;</a>
+  </div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("Images/home.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg1 {
+  /* The image used */
+  background-image: url("Images/home.png");
+
+  /* Full height */
+  height: 170%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgImage {
+	  /* The image used */
+	  background-image: url("Images/home.png");
+
+	  /* Full height */
+	  height: 750px; 
+	  width:1550px;
+	  margin: 0;
+	  border-radius: 0%;
+
+	  /* Center and scale the image nicely */
+	  /* background-position: float; */
+	  background-repeat: repeat;
+	  background-size: cover;
+
+	}
+	.bgImage1 {
+	  /* The image used */
+	  background-image: url("Images/home2.png");
+
+	  /* Full height */
+	  height: 1350px; 
+	  width:1550px;
+	  margin: 0;
+	  border-radius: 0%;
+
+	  /* Center and scale the image nicely */
+	  /* background-position: float; */
+	  background-repeat: repeat;
+	  background-size: cover;
+
+	}
+
+
+p1 {
+  font-size: 45px;
+}
+</style>
+</head>
+<body>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!--img src="Images/home.png" alt="hi" style="width:1250px;height:900px;"-->
+<div class="topnav">
+  <a class="active" href="BearyHome.html">BearyPro</a>
+  <a href="JavaBasics.html">AP Computer Science A</a>
+  <a href="CompetitiveProgramming.html">Competitive Programming</a>
+  <a href="Donate.html">Donate &#10084;</a>
+ <br>
+ <br>
+ <br>
+  
+  <center>
+<div class = "bgImage"> 
+<p style="color:white">
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<span style="font-size:60px;cursor:pointer" onclick="openNav()";>&#9776; Let's Get Started</span>
+</p>
+</div>
+
+<img src="Images/home1.png" alt="hi" style="width:1520px;height:650px;">
+<center> 
+
+<div class = "bgImage1">
+<p1 style="color:black">
+<br>
+<br>
+Help Support Our Mission! Running A Website Is Quite Expensive, 
+<br>And Your Contribution Will Help Our Young Nonprofit Greatly! Thank You! 
+  </p1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form action="Donate.html">
+<button class="button" style="vertical-align:middle"><span>Donate &#10084;</span></button>
+</form>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p1>
+<strong>Social Media:</strong>
+<br>
+      Check Out Our Youtube Channel! 
+	  </p1>
+	  <form action="https://www.youtube.com/channel/UCFT7gP0JT3bn57-z9l_vJAw">
+      <button type="submit" class = "button">Youtube</button>
+	  <br>
+	  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	  <h1>Beary Is A Young Tech Startup Founded by Jack & Jerry Zhou,
+<br>	  in March of 2021, 
+	  With A Purpose To Teach Java Universally For Free. 
+	  <br>
+	  Forever. </h1>
+	  </div>
+	
+</body>
+</html>
